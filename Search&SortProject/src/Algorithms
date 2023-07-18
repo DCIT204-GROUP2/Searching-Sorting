@@ -1,0 +1,86 @@
+BINARY SEARCH
+
+1.	Ask the user to enter the number of elements in the array and store it in a variable size.
+2.	Create an integer array of size “size” to store the elements.
+3.	Ask the user to enter the elements in sorted order and populate the array with the user-entered values.
+4.	Ask the user to enter the target element to be searched and store it in a variable target.
+5.	Initialize “left” as 0, representing the leftmost index of the array.
+6.	Initialize “right” as size - 1, representing the rightmost index of the array.
+7.	Repeat the following steps until left is less than or equal to right:
+i.	Calculate the middle index mid as left + (right - left) / 2.
+ii.	If array[mid] is equal to target, print (Element found at index mid) and exit the loop.
+iii.	If array[mid] is less than target, update “left” to mid + 1 to search in the right half of the array.
+iv.	If array[mid] is greater than target, update “right" to mid - 1 to search in the left half of the array.
+v.	If the above loop completes without finding the target element, print (Element not present in the array).
+
+LINEAR SEARCH
+1.Prompt the user to enter the number of elements (n) in the array.
+2. Read the value of n from the user.
+3. Create an integer array arr of size n to store the elements.
+4. Prompt the user to enter the elements of the array.
+5. Read n integers from the user and store them in the array arr.
+6. Prompt the user to enter the key to search.
+7. Read the value of the key from the user.
+8. Initialize a variable result to store the index of the found key.
+9. Iterate through each element of the array arr using a loop:
+    a. Check if the current element is equal to the key.
+    b. If the key is found: Set result to the index of the element.
+ Exit the loop.
+After the loop ends, check the value of result:
+    a. If result is equal to -1: Display a message indicating that the key cannot be found in the array.
+    b. If result is not equal to -1: Display a message indicating that the key is found at index result.
+
+
+
+
+SELECTION SORT
+1. Start
+2. Read the size of the array from the user and store it in the variable size.
+3. Create an integer array arr of size size.
+4. Read the elements of the array from the user and store them in the array arr.
+5. Print "Original Array: ".
+6. Call the displayArray method and pass the array arr as an argument to display the elements of the array.
+7. Start the timer and store the current time in the variable startTime.
+8. Iterate over the array arr from index 0 to size-2 using the variable i.
+   a. Set min_index to i.
+   b. Iterate over the array arr from index i+1 to size-1 using the variable j.
+      i. If arr[j] is less than arr[min_index], update min_index to j.
+   c. Swap the elements arr[i] and arr[min_index].
+9. Stop the timer and store the current time in the variable endTime.
+10. Print "Sorted Array: ".
+11. Call the displayArray method and pass the array arr as an argument to display the sorted elements of the array.
+12. Print "Time taken: " concatenated with the difference between endTime and startTime in nanoseconds.
+13. End
+
+RADIX SORT
+1.	To calculate the amount of digits, locate the largest number in the input array.
+2.	Set up a count array to keep track of how often each numeral (0–9) appears.
+3.	From the least significant digit to the most significant digit for each digit position;
+•	Set the count array to zeros at the beginning.
+•	Each digit should be counted once, and the counts should be kept in the count array.
+•	Add the previous count to the current count to determine the cumulative count array.
+4.	Make an output array for temporary use.
+5.	Iterate through the input array beginning with the final digit position:
+•	Obtain the position's current digit value.
+•	To identify the proper location in the output array, use the count array.
+•	The count value for that digit should be decreased.
+•	Put the current value in the calculated location of the temporary output array.
+6.	The temporary output array's elements are copied over to the input array.
+7.	For the following digit position, repeat steps 3-6 moving from right to left.
+8.	The input array will be sorted in ascending order after all the digits have been sorted.
+
+
+QUICK SORT
+1. Ask the user to input the size of the array. This will determine the number of elements in the array.
+2. Create an array of the specified size. This will be the array that we'll be sorting.
+3. Ask the user to input the elements of the array. We'll be populating the array with the user's input.
+4. Call the quick sort function with the array as a parameter. This will sort the array in ascending order.
+5. Implement the quick sort function . This will partition the array, sort the left and right sub-arrays,
+and return the sorted array.
+
+
+BUBBLE SORT
+
+INSERTION SORT
+
+MERGE SORT
